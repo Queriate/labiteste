@@ -1,0 +1,8 @@
+@import '../../global/global.css';
+
+@import '../../pages/index/partials/header.css';
+@import '../../pages/index/partials/carrossel.css';
+@import '../../pages/index/partials/sobre.css';
+@import '../../pages/index/partials/servicos.css';
+@import '../../pages/index/partials/localizacao.css';
+@import '../../pages/index/partials/footer.css';

@@ -1,0 +1,42 @@
+.servicos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  
+
+  width: 100%;
+  height: 80dvh;
+
+  background: var(--primary-2);
+
+  align-items: center;
+  justify-items: center;
+}
+
+.icon-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 12rem;
+  height: 12rem;
+
+  border-radius: 50%;
+
+  background: var(--primary-3);
+
+  position: relative;
+}
+
+.icon-item p {
+  font-family: 'poppins-bold';
+  font-size: 1.8rem;
+  color: var(--primary-3);
+
+  text-align: center;
+
+  position: absolute;
+
+  transform: translatey(300%);
+}
