@@ -50,28 +50,32 @@
     <div class="logo">
       <img src="assets/files/imgs/header/logo.svg" alt="logo labiteste">
     </div>
-
-    <div>
+  
+    <div class="menu-toggle" id="menuToggle">
       <div class="traco"></div>
       <div class="traco"></div>
       <div class="traco"></div>
     </div>
+  
+    <nav class="nav-links" id="navLinks">
+      <ul>
+        <li><a href="#redes-sociais">Redes Sociais</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#localizacao">Localização</a></li>
+      </ul>
+    </nav>
   </header>
+  
 
   <main>
 
-
-    <section class="carrossel">
-      <div class="carrossel-item carrossel-1">
-        <img src="assets/files/imgs/carrossel/section 1 - carrossel.svg" alt="+20 anos de excelência">
-      </div>
-      <div class="carrossel-item carrossel-2">
-        <img src="assets/files/imgs/carrossel/parte 2 - carrossel - section 1.svg" alt="exames laboratoriais">
+    
+    <section class="topo">
+      <div class="box-img">
       </div>
     </section>
 
     <section class="sobre">
-      <div class="escudo"><img src="assets/files/imgs/sobre/pattern.svg" alt="escudo"></div>
 
       <div class="texto">
         <h3>Na vanguarda da saúde e do bem-estar, nosso <br>laboratório de análises clínicas é o parceiro confiável
@@ -83,35 +87,43 @@
       </div>
     </section>
 
-    <section class="servicos">
-      <div class="icon-item">
+    <section class="servicos" id="servicos">
+      <div class="icon-item" onclick="confirmRedirect('neurologista')">
         <img src="assets/files/imgs/serviços/cerebro.svg" alt="neurologista">
         <p>Neurologista</p>
       </div>
-      <div class="icon-item">
+      <div class="icon-item" onclick="confirmRedirect('ultrassonografia')">
         <img src="assets/files/imgs/serviços/ultra.svg" alt="ultrassonografia">
         <p>Ultrassonografia</p>
       </div>
-      <div class="icon-item">
+      <div class="icon-item" onclick="confirmRedirect('cardiologista')">
         <img src="assets/files/imgs/serviços/coração.svg" alt="cardiologista">
         <p>Cardiologista</p>
       </div>
-      <div class="icon-item">
+      <div class="icon-item" onclick="confirmRedirect('ginecologista')">
         <img src="assets/files/imgs/serviços/utero.svg" alt="ginecologista">
         <p>Ginecologista</p>
       </div>
-      <div class="icon-item">
+      <div class="icon-item" onclick="confirmRedirect('clínico geral')">
         <img src="assets/files/imgs/serviços/estetoscopio.svg" alt="clinico geral">
         <p>Clínico Geral</p>
       </div>
-      <div class="icon-item">
+      <div class="icon-item" onclick="confirmRedirect('exames')">
         <img src="assets/files/imgs/serviços/seringa.svg" alt="exames">
         <p>Exames</p>
       </div>
-
     </section>
+    
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <p id="popup-text"></p>
+        <button id="confirm-btn">Sim</button>
+        <button id="cancel-btn">Não</button>
+      </div>
+    </div>
+    
 
-    <section class="localizacao">
+     <section class="localizacao" id="localizacao">
       <img class="gps" src="assets/files/imgs/localização/simbolo de localização.svg" alt="gps">
 
       <div class="frasco"><img src="assets/files/imgs/serviços/frasco.svg" alt="frasco"></div>
@@ -132,19 +144,23 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" id="redes-sociais">
 
     <div class="logo-name"><img src="assets/files/imgs/footer/nome-logo.svg" alt="Labiteste"></div>
 
-    <p>(84) 00000-0000</p>
-    <p>@instagram</p>
+    <p><a href="https://wa.me/+5584988823015/">(84) 98882-3015</a></p>
+
+    <p><a href="https://www.instagram.com/labitestelaboratoriorn/">@labitestelaboratoriorn</a></p>
+    
     <p>Avenida Própria, 1887. <br> Zona Norte de Natal <br>- Rio Grande do Norte.</p>
 
     <p class="copy">&copy; 2024 studio<b>umbu</b></p>
-  
+
   </footer>
 
-  <script src="assets/js/carrossel.js"></script>
+  <script src="assets/js/servicos.js"></script>
+  <script src="assets/js/hamburguer.js"></script>
+
 </body>
 
 </html>
