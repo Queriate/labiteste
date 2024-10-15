@@ -1,0 +1,45 @@
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(4rem, 4dvw, 4rem);
+    font-family: 'poppins-regular';
+  }
+  
+  .popup-content {
+    background: url(../../../../files/imgs/localização/wallpaper\ -\ section\ 4\ e\ 5.svg);
+    padding: 2rem;
+    margin: 0 3rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 5px 5px 25px black;
+  }
+  
+  .popup-content button {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+  }
+
+  .popup-content button:hover {
+    filter: contrast(2);
+  }
+  
+  #confirm-btn {
+    background: var(--primary-1);
+    color: white;
+  }
+  
+  #cancel-btn {
+    background: var(--primary-2);
+    color: white;
+  }
+  

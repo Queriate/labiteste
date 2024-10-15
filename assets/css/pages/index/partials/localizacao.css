@@ -1,9 +1,8 @@
-.localizacao { 
+.localizacao {
   width: 100%;
-  height: 100rem;
+  height: 160dvh;
 
   display: flex;
-
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -14,103 +13,219 @@
   position: relative;
 }
 
+@keyframes pulsarBrilhar {
+  0% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+    filter: brightness(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+}
+
 .localizacao .frasco {
   position: absolute;
-
   right: 0;
   top: 0;
-
   transform: translateY(-50%);
+  animation: pulsarBrilhar 3s infinite ease-in-out;
 }
 
 .localizacao .aviso {
   font-size: 2rem;
   font-family: 'poppins-bold';
-
   color: var(--primary-1);
 
-  position: absolute;
-
+  /* Remover position absolute */
+  margin-top: 1rem;
+  text-align: center;
   z-index: 1;
-
-  transform: translateX(10%) translateY(-1350%);
 }
 
 .localizacao .gps {
+  /* Ajuste para evitar transformações complexas */
   position: absolute;
-
-  transform: translateX(-185%) translateY(-360%);
-
+  left: 50%;
+  transform: translateX(-290%) translateY(120%);
+  top: 2rem;
   z-index: 1;
+}
+
+.localizacao .video-loc {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 .localizacao .video-loc img {
   border-radius: 50px 50px 50px 0;
-  margin: 2rem;
+  max-width: 100%;
 }
 
 .localizacao .endereco {
-
   font-family: 'poppins-bold';
-  font-size: 2.5rem;
-
+  font-size: clamp(1.2rem, 2dvw, 2.5rem);
   width: 35rem;
-
-  margin: 0 0 1rem 0;
-
   text-align: center;
-
   border-radius: 3rem;
-
   padding: .5rem;
-
   background: var(--primary-2);
   color: var(--primary-3);
+  margin-bottom: 1rem;
 }
 
 .localizacao .bairro {
-  font-size: 2.5rem;
+  font-size: clamp(1.2rem, 2dvw, 2.5rem);
   font-family: 'poppins-regular';
-  
   text-align: center;
-
   color: var(--primary-2);
-
   line-height: 2.5rem;
-
   margin: 1rem;
 }
 
 .localizacao .logo-labiteste {
   position: absolute;
-
   bottom: 11.3rem;
   left: 0;
 }
 
-.localizacao h5 {
+.localizacao h5, .localizacao h4 {
   color: var(--primary-1);
-  
-  font-family: 'poppins-light';
   font-size: 5rem;
-
-  margin: 4rem 0 0 0;
-}
-
-.localizacao h4 {
-
-  color: var(--primary-1);  
-
-  font-family: 'poppins-bold';
-  font-size: 5rem;
-  font-style: italic;
+  font-family: 'poppins-light', 'poppins-bold';
 }
 
 .localizacao h5 span {
   color: var(--primary-2);
-
-  font-family: 'poppins-bold';
   font-size: 5rem;
   font-style: italic;
+}
+
+/* Media Query para 768px */
+@media (max-width: 768px) {
+
+  .localizacao {
+    height: 100dvh;
+    flex-direction: column;
+  }
+
+  .localizacao .frasco {
+    display: none;
+  }
+
+  .localizacao .aviso {
+    font-size: 1.75rem;
+    text-align: center;
+    margin-top: 0;
+    z-index: 1;
+  }
+
+  .localizacao .gps {
+    left: 50%;
+    transform: translateX(-290%) translateY(120%);
+    top: 1.5rem;
+    max-width: 6rem;
+  }
+
+  .localizacao .video-loc {
+    margin: 1rem;
+    justify-content: center;
+  }
+
+  .localizacao .video-loc img {
+    max-width: 80%;
+    border-radius: 50px 50px 50px 0;
+  }
+
+  .localizacao .endereco {
+    width: 30%;
+    margin-bottom: 1rem;
+  }
+
+  .localizacao .bairro {
+    margin: 0 0 5rem 0;
+    line-height: 1.5rem;
+  }
+
+  .localizacao h5, .localizacao h4 {
+    font-size: 1.75rem;
+  }
+
+  .localizacao h5 span {
+    font-size: 1.75rem;
+  }
+
+  .localizacao .logo-labiteste {
+    display: none;
+  }
+}
+
+
+/* Media Query */
+@media (max-width: 421px) {
+
+  .localizacao {
+    height: 80dvh;
+    flex-direction: column;
+  }
+
+  .localizacao .frasco {
+    display: none;
+  }
+
+  .localizacao .aviso {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 0;
+    z-index: 1;
+  }
+
+  .localizacao .gps {
+    left: 50%;
+    transform: translateX(-290%) translateY(120%);
+    top: 1.5rem;
+    max-width: 5rem;
+  }
+
+  .localizacao .video-loc {
+    margin: 1rem;
+    justify-content: center;
+  }
+
+  .localizacao .video-loc img {
+    max-width: 70%;
+    border-radius: 50px 50px 50px 0;
+  }
+
+  .localizacao .endereco {
+    width: 50%;
+    margin-bottom: 1rem;
+  }
+
+  .localizacao .bairro {
+
+    margin: 0 0 5rem 0;
+
+    line-height: 1.5rem;
+  }
+
+  .localizacao h5, .localizacao h4 {
+    font-size: 1.5rem;
+  }
+
+  .localizacao h5 span {
+    font-size: 1.5rem;
+  }
+
+  .localizacao .logo-labiteste {
+    display: none;
+  }
 }
 

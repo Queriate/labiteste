@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
-  
+
 
   width: 100%;
   height: 80dvh;
@@ -13,7 +13,7 @@
   justify-items: center;
 }
 
-.icon-item{
+.icon-item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,7 +27,19 @@
   background: var(--primary-3);
 
   position: relative;
+
+  transition: .3s ease-in-out;
 }
+
+.icon-item:hover {
+
+  transform: scale(1.1);
+
+  cursor: pointer;
+
+  filter: brightness(2);
+}
+
 
 .icon-item p {
   font-family: 'poppins-bold';
@@ -39,4 +51,36 @@
   position: absolute;
 
   transform: translatey(300%);
+}
+
+@media (max-width: 421px) {
+
+  .servicos {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+
+    width: 100%;
+    height: 100dvh;
+  }
+
+  .icon-item {
+
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .icon-item img {
+
+    max-width: 50%;
+  }
+
+  .icon-item p {
+    
+    font-size: 1.5rem;
+
+    margin: 3rem 0 0 0;
+  }
+
 }

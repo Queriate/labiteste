@@ -1,47 +1,91 @@
+/* Estilos gerais do header */
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   width: 100%;
   height: 15dvh;
-
-  padding: 0 1.2rem 0 0;
-
+  padding: 0 1.2rem;
   background: var(--primary-3);
 }
 
-.header .traco {
-  width: 3rem;
-  height: .2rem;
-
-  margin: .5rem;
-
-  background: var(--primary-2);
+.logo img {
+  height: 100%;
 }
 
-@media (max-width: 430px){
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
 
+.traco {
+  width: 3rem;
+  height: .2rem;
+  margin: .3rem 0;
+  background: var(--primary-2);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Esconder o menu de navegação por padrão */
+.nav-links {
+  display: none;
+  position: absolute;
+  top: 15dvh;
+  right: 0;
+  background: var(--primary-3);
+  text-align: center;
+  width: 25%;
+  border-radius: 0 0 0 .5rem;
+}
+
+.nav-links ul {
+  list-style: none;
+  font-family: 'poppins-bold';
+}
+
+.nav-links ul li {
+  margin: 1rem 0;
+}
+
+.nav-links ul li a {
+  color: var(--primary-2);
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: .3s ease-in-out;
+}
+
+.nav-links ul li a:hover {
+  filter: brightness(1.5);
+}
+
+
+/* Estilos para ativar o menu */
+.menu-active .nav-links {
+  display: block;
+}
+
+/* Estilo para a animação do menu hamburguer */
+.menu-active #menuToggle .traco:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-active #menuToggle .traco:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-active #menuToggle .traco:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Responsividade */
+@media (max-width: 430px) {
   .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  
-    width: 100%;
     height: 101.8px;
-  
-    padding: 0 1.2rem 0 0;
-  
-    background: var(--primary-3);
   }
-  
-  .header .traco {
-    width: 3rem;
-    height: .2rem;
-  
-    margin: .5rem;
-  
-    background: var(--primary-2);
+
+  .nav-links {
+    top: 101.8px;
   }
-  
 }

@@ -1,55 +1,67 @@
 .sobre {
   display: flex;
 
-  
-  justify-content: center;
+  padding: 94px 84px 94px 0;
+
+  justify-content: flex-end;
   align-items: center;
-  
+
   width: 100%;
-  height: 60.1rem;
+  height: 60rem;
 
-  position: relative;
-
-  background: 0;
-  background-size: cover;
-}
-
-.sobre .escudo {
-  position: absolute;
-
-  left: 0;
-  bottom: 0;
+  background: url(../../../../files/imgs/sobre/escudo.svg) no-repeat;
 }
 
 .sobre .texto {
-  position: absolute;
-
-  transform: translatey(50%);
+  width: 55%;
 }
+
 .sobre .texto h3 {
-
-  padding: 0 13.5rem 0 13.5rem;
-
-  text-align: center;
+  text-align: right;
   line-height: 3.5rem;
 
   color: var(--primary-3);
 
-  font-size: clamp(1rem, 2.5dvw, 4rem);
+  font-size: clamp(3rem, 3vw, 5rem);
+  
   font-family: 'poppins-bold';
-
-  margin: 3rem;
 }
 
-.sobre .texto p{
+.sobre .texto p {
+  margin: 3rem 0 0 0;
 
-  padding: 0 2rem 0 2rem;
-
-  text-align: center;
+  text-align: right;
   line-height: 2rem;
 
   color: var(--primary-3);
 
-  font-size: clamp(1rem, 1.5dvw, 2rem);
+  font-size: clamp(1.5rem, 1.5vw, 2rem);
   font-family: 'poppins-light';
+}
+
+/* Responsividade para telas muito pequenas (largura até 421px) */
+@media (max-width: 421px) {
+
+  .sobre {
+
+    padding: 0 23px 0 0px;
+
+    height: 54.1rem;
+
+    background: url(../../../../files/imgs/sobre/escudo-mobile.svg) no-repeat;
+  }
+
+  .sobre .texto {
+    width: 100%;
+    height: 35%;
+  }
+
+  .sobre .texto h3 {
+    line-height: 2.5rem;
+  }
+
+  .sobre .texto p {
+   line-height: 1.4rem;
+  }
+
 }
