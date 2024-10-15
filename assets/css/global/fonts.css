@@ -13,3 +13,8 @@
     font-family: 'poppins-light';
     src: url('../../files/fonts/Poppins-Light.ttf');
 }
+
+@font-face {
+    font-family: 'font-sist';
+    src: url('../../files/fonts/eras-itc-demi.ttf');
+}
