@@ -12,51 +12,56 @@
 
   <meta name="keywords" content="Análises clínicas Natal, Laboratório de saúde, Diagnóstico preciso">
   <meta name="robots" content="index, follow">
-  <!-- <link rel="canonical" href="https://www.site.com/"> -->
+  <link rel="canonical" href="https://labiteste.com.br/">
 
   <!-- Open Graph Meta Tags para redes sociais -->
   <meta property="og:title"
     content="Laboratório de Análises Clínicas em Natal: Precisão e Confiabilidade em Diagnósticos de Saúde">
   <meta property="og:description"
     content="Nosso laboratório de análises clínicas em Natal oferece diagnósticos precisos e confiáveis, utilizando equipamentos de última geração. Com 20 anos de experiência, priorizamos a saúde e o bem-estar, fornecendo resultados rápidos e confiáveis para o seu tratamento.">
-  <meta property="og:url" content="https://www.site.com/">
-  <meta property="og:image" content="https://www.site.com/imagem.jpg">
+  <meta property="og:url" content="https://labiteste.com.br/">
+  <meta property="og:image" content="https://labiteste.com.br/imagem.jpg">
   <meta property="og:type" content="website">
 
   <!-- Link para CSS -->
   <link rel="stylesheet" href="assets/css/pages/index/index.css">
 
   <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" href="assets\files\imgs\favicon/favicon-48x48.png" sizes="48x48" />
+  <link rel="icon" type="image/svg+xml" href="assets\files\imgs\favicon/favicon.svg" />
+  <link rel="shortcut icon" href="assets\files\imgs\favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets\files\imgs\favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="assets\files\imgs\favicon/site.webmanifest" />
 
   <!-- Schema.org Markup para SEO avançado -->
-  <!-- <script type="application/ld+json">
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "url": "https://www.seusite.com/",
-      "name": "Nome do Seu Site",
+      "url": "https://www.labiteste.com.br/",
+      "name": "Labiteste",
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://www.seusite.com/?s={search_term_string}",
+        "target": "https://www.labiteste.com.br/?s={search_term_string}",
         "query-input": "required name=search_term_string"
       }
     }
-    </script> -->
+  </script>
+
 </head>
 
 <body>
   <header class="header">
     <div class="logo">
-      <img src="assets/files/imgs/header/logo.svg" alt="logo labiteste">
+      <img loading="lazy" src="assets/files/imgs/header/logo.svg" alt="logo labiteste">
     </div>
-  
+
     <div class="menu-toggle" id="menuToggle">
       <div class="traco"></div>
       <div class="traco"></div>
       <div class="traco"></div>
     </div>
-  
+
     <nav class="nav-links" id="navLinks">
       <ul>
         <li><a href="#redes-sociais">Redes Sociais</a></li>
@@ -65,22 +70,18 @@
       </ul>
     </nav>
   </header>
-  
+
 
   <main>
-
-    
     <section class="topo">
       <div class="box-img">
       </div>
     </section>
 
     <section class="sobre">
-
       <div class="texto">
         <h3>Na vanguarda da saúde e do bem-estar, nosso <br>laboratório de análises clínicas é o parceiro confiável
-          <br>para
-          cuidar da sua saúde com precisão e dedicação.
+          <br>para cuidar da sua saúde com precisão e dedicação.
         </h3>
         <p>Com equipamentos de última geração e uma equipe qualificada, estamos comprometidos em <br>fornecer resultados
           precisos para auxiliar no diagnóstico e tratamento.</p>
@@ -89,31 +90,31 @@
 
     <section class="servicos" id="servicos">
       <div class="icon-item" onclick="confirmRedirect('neurologista')">
-        <img src="assets/files/imgs/serviços/cerebro.svg" alt="neurologista">
+        <img loading="lazy" src="assets/files/imgs/serviços/cerebro.svg" alt="neurologista">
         <p>Neurologista</p>
       </div>
       <div class="icon-item" onclick="confirmRedirect('ultrassonografia')">
-        <img src="assets/files/imgs/serviços/ultra.svg" alt="ultrassonografia">
+        <img loading="lazy" src="assets/files/imgs/serviços/ultra.svg" alt="ultrassonografia">
         <p>Ultrassonografia</p>
       </div>
       <div class="icon-item" onclick="confirmRedirect('cardiologista')">
-        <img src="assets/files/imgs/serviços/coração.svg" alt="cardiologista">
+        <img loading="lazy" src="assets/files/imgs/serviços/coração.svg" alt="cardiologista">
         <p>Cardiologista</p>
       </div>
       <div class="icon-item" onclick="confirmRedirect('ginecologista')">
-        <img src="assets/files/imgs/serviços/utero.svg" alt="ginecologista">
+        <img loading="lazy" src="assets/files/imgs/serviços/utero.svg" alt="ginecologista">
         <p>Ginecologista</p>
       </div>
       <div class="icon-item" onclick="confirmRedirect('clínico geral')">
-        <img src="assets/files/imgs/serviços/estetoscopio.svg" alt="clinico geral">
+        <img loading="lazy" src="assets/files/imgs/serviços/estetoscopio.svg" alt="clinico geral">
         <p>Clínico Geral</p>
       </div>
       <div class="icon-item" onclick="confirmRedirect('exames')">
-        <img src="assets/files/imgs/serviços/seringa.svg" alt="exames">
+        <img loading="lazy" src="assets/files/imgs/serviços/seringa.svg" alt="exames">
         <p>Exames</p>
       </div>
     </section>
-    
+
     <div id="popup" class="popup">
       <div class="popup-content">
         <p id="popup-text"></p>
@@ -121,22 +122,22 @@
         <button id="cancel-btn">Não</button>
       </div>
     </div>
-    
 
-     <section class="localizacao" id="localizacao">
-      <img class="gps" src="assets/files/imgs/localização/simbolo de localização.svg" alt="gps">
+    <section class="localizacao" id="localizacao">
+      <img loading="lazy" class="gps" src="assets/files/imgs/localização/simbolo de localização.svg" alt="gps">
 
-      <div class="frasco"><img src="assets/files/imgs/serviços/frasco.svg" alt="frasco"></div>
+      <div class="frasco"><img loading="lazy" src="assets/files/imgs/serviços/frasco.svg" alt="frasco"></div>
 
       <p class="aviso">Estamos localizados na</p>
 
-      <div class="video-loc"><img src="assets/files/imgs/localização/desktop.gif" alt="localização"></div>
+      <div class="video-loc"><img loading="lazy" src="assets/files/imgs/localização/desktop.gif" alt="localização">
+      </div>
 
       <h2 class="endereco">Avenida Própria, 1887</h2>
       <p class="bairro">Zona Norte - 59104-160<br> Natal, Rio Grande do Norte</p>
 
-      <div class="logo-labiteste"><img src="assets/files/imgs/localização/logo-labiteste.svg" alt="logo labiteste">
-      </div>
+      <div class="logo-labiteste"><img loading="lazy" src="assets/files/imgs/localização/logo-labiteste.svg"
+          alt="logo labiteste"></div>
 
       <h5>Sua <span>saúde</span> é nossa <span class="span-bold">prioridade!</span></h5>
 
@@ -145,17 +146,15 @@
   </main>
 
   <footer class="footer" id="redes-sociais">
-
-    <div class="logo-name"><img src="assets/files/imgs/footer/nome-logo.svg" alt="Labiteste"></div>
+    <div class="logo-name"><img loading="lazy" src="assets/files/imgs/footer/nome-logo.svg" alt="Labiteste"></div>
 
     <p><a href="https://wa.me/+5584988823015/">(84) 98882-3015</a></p>
 
     <p><a href="https://www.instagram.com/labitestelaboratoriorn/">@labitestelaboratoriorn</a></p>
-    
+
     <p>Avenida Própria, 1887. <br> Zona Norte de Natal <br>- Rio Grande do Norte.</p>
 
     <p class="copy">&copy; 2024 studio<b>umbu</b></p>
-
   </footer>
 
   <script src="assets/js/servicos.js"></script>
