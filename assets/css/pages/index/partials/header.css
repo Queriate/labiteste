@@ -80,6 +80,17 @@
 }
 
 /* Responsividade */
+
+@media (max-width: 460px) {
+  .header {
+    height: 101.8px;
+  }
+
+  .nav-links {
+    top: 101.8px;
+  }
+}
+
 @media (max-width: 430px) {
   .header {
     height: 101.8px;

@@ -167,6 +167,66 @@
   }
 }
 
+@media (max-width: 460px) {
+
+  .localizacao {
+    height: 80dvh;
+    flex-direction: column;
+  }
+
+  .localizacao .frasco {
+    display: none;
+  }
+
+  .localizacao .aviso {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 0;
+    z-index: 1;
+  }
+
+  .localizacao .gps {
+    left: 50%;
+    transform: translateX(-290%) translateY(120%);
+    top: 1.5rem;
+    max-width: 5rem;
+  }
+
+  .localizacao .video-loc {
+    margin: 1rem;
+    justify-content: center;
+  }
+
+  .localizacao .video-loc img {
+    max-width: 70%;
+    border-radius: 50px 50px 50px 0;
+  }
+
+  .localizacao .endereco {
+    width: 50%;
+    margin-bottom: 1rem;
+  }
+
+  .localizacao .bairro {
+
+    margin: 0 0 5rem 0;
+
+    line-height: 1.5rem;
+  }
+
+  .localizacao h5, .localizacao h4 {
+    font-size: 1.5rem;
+  }
+
+  .localizacao h5 span {
+    font-size: 1.5rem;
+  }
+
+  .localizacao .logo-labiteste {
+    display: none;
+  }
+}
+
 
 /* Media Query */
 @media (max-width: 421px) {

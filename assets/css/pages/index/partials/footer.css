@@ -41,6 +41,43 @@
   font-size: clamp(1rem, 1dvw, 2rem);  
 }
 
+@media (max-width: 460px) {
+
+  .footer {
+    padding: 0 0 0 1rem;
+  
+    width: 100%;
+    height: 27.1rem;
+  }
+  
+  .footer .logo-name {
+    margin: 0 0 1rem 0;
+  }
+  
+  .footer p {
+    font-size: clamp(1rem, 1dvw, 2rem);
+    font-family: 'poppins-regular';
+  
+    color: var(--primary-3);
+  }
+  
+  .footer .copy {
+    position: absolute;
+  
+    bottom: 0;
+    right: 37%;
+  }
+  
+  .footer .copy{
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .footer .copy b {
+    font-size: clamp(1rem, 1dvw, 2rem);  
+  }
+  
+}
+
 @media (max-width: 421px) {
 
   .footer {

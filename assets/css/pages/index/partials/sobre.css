@@ -40,6 +40,32 @@
 }
 
 /* Responsividade para telas muito pequenas (largura até 421px) */
+@media (max-width: 460px) {
+
+  .sobre {
+
+    padding: 0 23px 0 0px;
+
+    height: 54.1rem;
+
+    background: url(../../../../files/imgs/sobre/escudo-mobile.svg) no-repeat;
+  }
+
+  .sobre .texto {
+    width: 100%;
+    height: 35%;
+  }
+
+  .sobre .texto h3 {
+    line-height: 2.5rem;
+  }
+
+  .sobre .texto p {
+   line-height: 1.4rem;
+  }
+
+}
+
 @media (max-width: 421px) {
 
   .sobre {
