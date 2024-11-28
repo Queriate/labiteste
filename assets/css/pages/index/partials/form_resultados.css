@@ -1,0 +1,91 @@
+/* Estilização do formulário */
+#form_resultados {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: 'poppins-regular';
+}
+
+form {
+  background: url(../../../../files/imgs/localização/wallpaper\ -\ section\ 4\ e\ 5.svg);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Grupos gerais */
+form > div {
+  margin-bottom: 20px;
+}
+
+form > div > div > label:first-child {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: var(--primary-1);
+  font-size: clamp(1.5rem, 2rem, 3rem);
+}
+
+/* Inputs de texto */
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-color: var(--primary-4);
+  border-radius: 5px;
+  font-size: 16px;
+  color: var(--primary-1);
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+/* Botão */
+input[type="button"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: var(--primary-1);
+  border: 1px solid transparent;
+  border-color: var(--primary-3);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="button"]:hover {
+  background-color: var(--primary-2);
+}
+
+/* Grupo de botões de rádio */
+form > div > div > div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+form > div > div > div input[type="radio"] {
+  display: none;
+}
+
+form > div > div > div input[type="radio"] + label {
+  display: inline-block;
+  padding: 8px 15px;
+  border: 1px solid transparent;
+  border-color: var(--primary-1);
+  border-radius: 20px;
+  font-size: 14px;
+  color: var(--primary-1);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+form > div > div > div input[type="radio"]:checked + label {
+  background-color: var(--primary-1);
+  color: #fff;
+}
